@@ -1,11 +1,14 @@
 @import "global";
 .header {
-  .nav-wrapper {
-    width: 100%;
-  }
   height: 55px;
   background-color: #fdd670;
   border-bottom: 1px solid #dfb547;
+  .nav-wrapper {
+    width: 100%;
+  }
+  .top-nav-hamburgerToinput-wrapper {
+    width: 100%;
+  }
   .hamburger-btn {
     @include reset-btn;
     background: 0 0;
@@ -32,9 +35,7 @@
       object-fit: cover;
     }
   }
-  .top-nav-hamburgerToinput-wrapper {
-    width: 100%;
-  }
+
   .header-search-form {
     width: 100%;
     padding: 0 10px;
@@ -73,6 +74,7 @@
       }
     }
   }
+  //  desktop right side top header btn styles start
   .top-nav-btn-wrapper {
     width: 410px;
   }
