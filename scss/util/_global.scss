@@ -1,8 +1,14 @@
-.site-h1 {
-  color: green;
-  font-weight: bold;
-  background: red;
+$primary-hover: #eeb529;
+@mixin reset-btn {
+  border: 0;
+  outline: 0;
 }
-h2 {
-  color: aqua;
+@mixin transition-100 {
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+@mixin flex-center-center {
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }

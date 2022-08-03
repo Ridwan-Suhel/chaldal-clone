@@ -4,25 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS only -->
+    <title>App Title is here</title>
+    <!-- fontawesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap v-5.2.0 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>App Title is here</title>
   </head>
   <body>
-    <h1 class="site-h1">Hello World</h1>
-    <h2 class="bg-info">bangladesh</h2>
+    <!-- header start -->
+    <header class="header d-flex align-items-center">
+      <!-- top nav wrapper -->
+      <nav class="nav-wrapper d-flex align-items-center">
+        <!-- hamburger to form input-wrapper  -->
+        <div class="top-nav-hamburgerToinput-wrapper d-flex align-items-center">
+          <!-- hamburger -->
+          <button class="hamburger-btn">
+            <img class="menu-icon" src="images/menu.png" alt="Hamburger-menu" />
+          </button>
+          <!-- header logo -->
+          <div class="logo-wrapper">
+            <img
+              class="header-logo"
+              src="images/logo/logo-small.webp"
+              alt="logo"
+            />
+          </div>
+          <!-- search form -->
+          <form class="header-search-form" action="">
+            <div class="form-group search-input-div">
+              <input
+                placeholder="Search for products (e.g. eggs, milk, potato)"
+                type="text"
+                class="form-control search-input"
+              />
+              <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- top nav all btn-wrapper -->
+        <div class="top-nav-btn-wrapper d-flex align-items-center">
+          <!-- city selection -->
+          <div class="city-selection top-nav-btn">
+            <span>
+              <i class="fa-solid fa-house"></i>
+            </span>
+            <span class="area-name">Dhaka</span>
+            <span>
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+          </div>
+          <!-- Help btn-->
+          <div class="help-area top-nav-btn">
+            <span>
+              <i class="fa-solid fa-question"></i>
+            </span>
+            <span class="help-btn-text">Help</span>
+          </div>
+          <!-- language switch-->
+          <div class="lang-switch top-nav-btn">
+            <div
+              class="switch-wrapper d-flex justify-items-center align-items-center h-100"
+            >
+              <p class="active">EN&nbsp;</p>
+              <p class="">|</p>
+              <p class="bangla">&nbsp;বাং</p>
+            </div>
+          </div>
+          <!-- signin btn -->
+          <div class="signin-wrapper">
+            <button class="signin-btn">Sign in</button>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <!-- main custom js -->
     <script src="js/main.js"></script>
   </body>
 </html>
