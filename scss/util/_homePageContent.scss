@@ -1,0 +1,25 @@
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sideMenu-wrapper {
+  width: 220px;
+  position: relative;
+  @include transition-300;
+}
+.sideMenu-wrapper.menu-active {
+  width: 0px;
+  @include transition-300;
+}
+.site-content {
+  width: 100%;
+  @include transition-300;
+}
+.site-content.menu-active {
+  width: 100%;
+  @include transition-300;
+}
+.main-wrapper.menu-active {
+  display: block;
+  @include transition-300;
+}

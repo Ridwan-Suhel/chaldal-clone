@@ -1,0 +1,50 @@
+.hero-area {
+  background-image: url("../../images/homepage/landingBannerTop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 325px;
+  padding-top: 100px;
+  .hero-content {
+    h2 {
+      color: #000;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+    }
+    @include search-input-component-style;
+
+    .hero-search-form {
+      border-radius: 6px;
+      border: 0.5px solid #c8c8c8;
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    .search-input {
+      font-size: 17px !important;
+      padding: 10px;
+    }
+    .search-btn {
+      border-top-right-radius: 6px !important;
+      border-bottom-right-radius: 6px !important;
+    }
+  }
+}
+
+// hero bottom
+.hero-bottom {
+  .custom-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .row-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .single-col {
+        margin: 0 auto;
+        max-width: 586px;
+        width: 49.8%;
+      }
+    }
+  }
+}

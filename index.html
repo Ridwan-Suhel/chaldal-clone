@@ -46,18 +46,20 @@
             </a>
           </div>
           <!-- search form -->
-          <form class="header-search-form" action="">
-            <div class="form-group search-input-div">
-              <input
-                placeholder="Search for products (e.g. eggs, milk, potato)"
-                type="text"
-                class="form-control search-input"
-              />
-              <button class="search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
-          </form>
+          <div class="search-input-wrapper">
+            <form class="header-search-form" action="">
+              <div class="form-group search-input-div">
+                <input
+                  placeholder="Search for products (e.g. eggs, milk, potato)"
+                  type="text"
+                  class="form-control search-input"
+                />
+                <button class="search-btn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
         <!-- top nav all btn-wrapper -->
         <div class="top-nav-btn-wrapper d-flex align-items-center">
@@ -100,164 +102,214 @@
       <!--================================
          side bar 
          ================================-->
-      <aside class="side-menu">
-        <div class="menu-wrapper">
-          <!-- store menu btn -->
-          <div class="store-menu d-flex align-items-center">
-            <button
-              class="store-btn grocery-btn d-flex align-items-center justify-content-center"
-            >
-              <img src="images/grocery-icon.png" alt="Grocery-icon" />
-              <span>Grocery</span>
-            </button>
-            <button
-              class="store-btn pharmacy-btn d-flex align-items-center justify-content-center"
-            >
-              <img src="images/pharmacy-icon.png" alt="Pharmacy-icon" />
-              <span>Pharmacy</span>
-            </button>
+      <div class="sideMenu-wrapper">
+        <aside class="side-menu">
+          <div class="menu-wrapper">
+            <!-- store menu btn -->
+            <div class="store-menu d-flex align-items-center">
+              <button
+                class="store-btn grocery-btn d-flex align-items-center justify-content-center"
+              >
+                <img src="images/grocery-icon.png" alt="Grocery-icon" />
+                <span>Grocery</span>
+              </button>
+              <button
+                class="store-btn pharmacy-btn d-flex align-items-center justify-content-center"
+              >
+                <img src="images/pharmacy-icon.png" alt="Pharmacy-icon" />
+                <span>Pharmacy</span>
+              </button>
+            </div>
+            <!-- misc menu -->
+            <div class="misc-menu">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span>Offers</span><span class="badge-count">87</span></a
+                  >
+                </li>
+                <li><a href="#">Food Aid</a></li>
+                <li><a href="#">Recipes</a></li>
+              </ul>
+            </div>
+            <!-- side menu category-->
+            <div class="side-menu-category">
+              <ul>
+                <li class="d-flex">
+                  <img src="images/side-menu-icon/popular.webp" alt="icon" /><a
+                    href="#"
+                    >Popular</a
+                  >
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="images/side-menu-icon/flash-sales.webp"
+                    alt="icon"
+                  /><a href="#">Flash Sales</a>
+                </li>
+                <li class="d-flex">
+                  <img src="images/side-menu-icon/food.webp" alt="icon" /><a
+                    href="#"
+                    ><span>Food</span>
+                    <span class="navIcon"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="images/side-menu-icon/personal-care.webp"
+                    alt="icon"
+                  /><a href="#"
+                    ><span>Personal Care</span
+                    ><span class="navIcon"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="d-flex">
+                  <img src="images/side-menu-icon/hygiene.webp" alt="icon" /><a
+                    href="#"
+                    >Hygiene</a
+                  >
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="images/side-menu-icon/beauty-health.webp"
+                    alt="icon"
+                  /><a href="#"
+                    ><span>Beauty &amp; Health</span
+                    ><span class="navIcon"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="images/side-menu-icon/baby-care.webp"
+                    alt="icon"
+                  /><a href="#"
+                    ><span>Baby Care</span
+                    ><span class="navIcon"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="d-flex">
+                  <img src="images/side-menu-icon/pet-care.webp" alt="icon" /><a
+                    href="#"
+                    ><span>Pet Care</span
+                    ><span class="navIcon"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="images/side-menu-icon/cleaning-supplies.webp"
+                    alt="icon"
+                  /><a href="#"
+                    ><span>Cleaning Supplies</span
+                    ><span class="navIcon"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="images/side-menu-icon/home-kitchen.webp"
+                    alt="icon"
+                  /><a href="#"
+                    ><span>Home &amp; Kitchen</span
+                    ><span class="navIcon"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="images/side-menu-icon/stationery-office.webp"
+                    alt="icon"
+                  /><a href="#"
+                    ><span>Stationery &amp; Office</span
+                    ><span class="navIcon"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="images/side-menu-icon/toys-sports.webp"
+                    alt="icon"
+                  /><a href="#"
+                    ><span>Toys &amp; Sports</span
+                    ><span class="navIcon"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="images/side-menu-icon/vehicle-essentials.webp"
+                    alt="icon"
+                  /><a href="#">Vehicle Essentials</a>
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="images/side-menu-icon/fashion-lifestyle.webp"
+                    alt="icon"
+                  /><a href="#"
+                    ><span>Fashion &amp; Lifestyle</span
+                    ><span class="navIcon"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <!-- misc menu -->
-          <div class="misc-menu">
-            <ul>
-              <li>
-                <a href="#"
-                  ><span>Offers</span><span class="badge-count">87</span></a
-                >
-              </li>
-              <li><a href="#">Food Aid</a></li>
-              <li><a href="#">Recipes</a></li>
-            </ul>
-          </div>
-          <!-- side menu category-->
-          <div class="side-menu-category">
-            <ul>
-              <li class="d-flex">
-                <img src="images/side-menu-icon/popular.webp" alt="icon" /><a
-                  href="#"
-                  >Popular</a
-                >
-              </li>
-              <li class="d-flex">
-                <img
-                  src="images/side-menu-icon/flash-sales.webp"
-                  alt="icon"
-                /><a href="#">Flash Sales</a>
-              </li>
-              <li class="d-flex">
-                <img src="images/side-menu-icon/food.webp" alt="icon" /><a
-                  href="#"
-                  ><span>Food</span>
-                  <span class="navIcon"
-                    ><i class="fa-solid fa-chevron-right"></i></span
-                ></a>
-              </li>
-              <li class="d-flex">
-                <img
-                  src="images/side-menu-icon/personal-care.webp"
-                  alt="icon"
-                /><a href="#"
-                  ><span>Personal Care</span
-                  ><span class="navIcon"
-                    ><i class="fa-solid fa-chevron-right"></i></span
-                ></a>
-              </li>
-              <li class="d-flex">
-                <img src="images/side-menu-icon/hygiene.webp" alt="icon" /><a
-                  href="#"
-                  >Hygiene</a
-                >
-              </li>
-              <li class="d-flex">
-                <img
-                  src="images/side-menu-icon/beauty-health.webp"
-                  alt="icon"
-                /><a href="#"
-                  ><span>Beauty &amp; Health</span
-                  ><span class="navIcon"
-                    ><i class="fa-solid fa-chevron-right"></i></span
-                ></a>
-              </li>
-              <li class="d-flex">
-                <img src="images/side-menu-icon/baby-care.webp" alt="icon" /><a
-                  href="#"
-                  ><span>Baby Care</span
-                  ><span class="navIcon"
-                    ><i class="fa-solid fa-chevron-right"></i></span
-                ></a>
-              </li>
-              <li class="d-flex">
-                <img src="images/side-menu-icon/pet-care.webp" alt="icon" /><a
-                  href="#"
-                  ><span>Pet Care</span
-                  ><span class="navIcon"
-                    ><i class="fa-solid fa-chevron-right"></i></span
-                ></a>
-              </li>
-              <li class="d-flex">
-                <img
-                  src="images/side-menu-icon/cleaning-supplies.webp"
-                  alt="icon"
-                /><a href="#"
-                  ><span>Cleaning Supplies</span
-                  ><span class="navIcon"
-                    ><i class="fa-solid fa-chevron-right"></i></span
-                ></a>
-              </li>
-              <li class="d-flex">
-                <img
-                  src="images/side-menu-icon/home-kitchen.webp"
-                  alt="icon"
-                /><a href="#"
-                  ><span>Home &amp; Kitchen</span
-                  ><span class="navIcon"
-                    ><i class="fa-solid fa-chevron-right"></i></span
-                ></a>
-              </li>
-              <li class="d-flex">
-                <img
-                  src="images/side-menu-icon/stationery-office.webp"
-                  alt="icon"
-                /><a href="#"
-                  ><span>Stationery &amp; Office</span
-                  ><span class="navIcon"
-                    ><i class="fa-solid fa-chevron-right"></i></span
-                ></a>
-              </li>
-              <li class="d-flex">
-                <img
-                  src="images/side-menu-icon/toys-sports.webp"
-                  alt="icon"
-                /><a href="#"
-                  ><span>Toys &amp; Sports</span
-                  ><span class="navIcon"
-                    ><i class="fa-solid fa-chevron-right"></i></span
-                ></a>
-              </li>
-              <li class="d-flex">
-                <img
-                  src="images/side-menu-icon/vehicle-essentials.webp"
-                  alt="icon"
-                /><a href="#">Vehicle Essentials</a>
-              </li>
-              <li class="d-flex">
-                <img
-                  src="images/side-menu-icon/fashion-lifestyle.webp"
-                  alt="icon"
-                /><a href="#"
-                  ><span>Fashion &amp; Lifestyle</span
-                  ><span class="navIcon"
-                    ><i class="fa-solid fa-chevron-right"></i></span
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
       <!--================================
-         site main content 
+         site main content start
          ================================-->
-      <div class="site-content"></div>
+      <div class="site-content">
+        <!-- hero area/banner start  -->
+        <section class="hero-area">
+          <div class="hero-content">
+            <h2>Groceries delivered in 30 minutes</h2>
+            <!-- search form -->
+            <div class="search-input-wrapper">
+              <form class="hero-search-form" action="">
+                <div class="form-group search-input-div">
+                  <input
+                    placeholder="Search for products (e.g. eggs, milk, potato)"
+                    type="text"
+                    class="form-control search-input"
+                  />
+                  <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="hero-bottom">
+          <div class="custom-container">
+            <div class="row-wrapper">
+              <div class="single-col">
+                <a href="">
+                  <img
+                    class="img-fluid"
+                    src="images/homepage/mpimage.webp"
+                    alt="img"
+                  />
+                </a>
+              </div>
+              <div class="single-col">
+                <a href="">
+                  <img
+                    class="img-fluid"
+                    src="images/homepage/_mpimage.webp"
+                    alt="img"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- jQuery CDN - Slim version -->
