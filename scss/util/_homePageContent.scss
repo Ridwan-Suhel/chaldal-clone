@@ -1,6 +1,22 @@
 .main-wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 1%;
+}
+
+@media (max-width: 1440px) {
+  .main-wrapper {
+    gap: 2%;
+  }
+}
+@media (max-width: 1220px) {
+  .main-wrapper {
+    gap: 3%;
+  }
+}
+@media (min-width: 1840px) {
+  .main-wrapper {
+    gap: 0.5%;
+  }
 }
 .sideMenu-wrapper {
   width: 220px;
@@ -66,12 +82,15 @@
 
 // how to order
 .howTo-order {
+  margin-bottom: 40px;
   .section-wrapper {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0px 15px;
     .title {
     }
     .slider-wrapper {
+      margin-top: 60px;
       .carousel-indicators {
         margin-left: 0;
         margin-right: 0;

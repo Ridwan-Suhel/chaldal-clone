@@ -14,6 +14,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- bootstrap v-5.2.0 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -499,9 +504,130 @@
             </div>
           </div>
         </section>
+        <!-- special offer section -->
+        <section class="special-offer">
+          <h3 class="title">Special Offers</h3>
+          <div class="sp-offer-wrapper">
+            <!-- Swiper -->
+            <div class="container">
+              <div class="swiper specialOfferSwiper">
+                <div class="swiper-wrapper">
+                  <!-- single offer box slider -->
+                  <div class="swiper-slide swiper-slider-single-box">
+                    <div class="single-offer-slider">
+                      <div class="product-img-wrapper">
+                        <img
+                          src="images/special-offer-slider/lifebuoy-handwash-total-refill-170-ml.webp"
+                          alt="product-img"
+                        />
+                      </div>
+                      <!-- product  -->
+                      <div class="product">
+                        <div class="product-wrwapper">
+                          <img
+                            src="images/special-offer-slider/lifebuoy-handwash-total-refill-170-ml-product.webp"
+                            alt="img"
+                          />
+                          <div class="pr-name">Surf Excel Washing Powder</div>
+                          <p class="subTxt">1kg</p>
+                          <p class="price">৳ 15</p>
+                        </div>
+                        <button class="addToBagBtn">
+                          <i class="fa-solid fa-bolt-lightning"></i> Add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single offer box slider -->
+                  <div class="swiper-slide swiper-slider-single-box">
+                    <div class="single-offer-slider">
+                      <div class="product-img-wrapper">
+                        <img
+                          src="images/special-offer-slider/surf-excel-washing-powder-1-kg.webp"
+                          alt="product-img"
+                        />
+                      </div>
+                      <!-- product  -->
+                      <div class="product">
+                        <div class="product-wrwapper">
+                          <img
+                            src="images/special-offer-slider/surf-excel-washing-powder-1-kg-product.webp"
+                            alt="img"
+                          />
+                          <div class="pr-name">Surf Excel Washing Powder</div>
+                          <p class="subTxt">1kg</p>
+                          <p class="price">৳ 15</p>
+                        </div>
+                        <button class="addToBagBtn">
+                          <i class="fa-solid fa-bolt-lightning"></i> Add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single offer box slider -->
+                  <div class="swiper-slide swiper-slider-single-box">
+                    <div class="single-offer-slider">
+                      <div class="product-img-wrapper">
+                        <img
+                          src="images/special-offer-slider/dekko-combo-pasta-buy-2-get-1-free-200-gm.webp"
+                          alt="product-img"
+                        />
+                      </div>
+                      <!-- product  -->
+                      <div class="product">
+                        <div class="product-wrwapper">
+                          <img
+                            src="images/special-offer-slider/dekko-combo-pasta-buy-2-get-1-free-200-gm-product.webp"
+                            alt="img"
+                          />
+                          <div class="pr-name">Surf Excel Washing Powder</div>
+                          <p class="subTxt">1kg</p>
+                          <p class="price">৳ 15</p>
+                        </div>
+                        <button class="addToBagBtn">
+                          <i class="fa-solid fa-bolt-lightning"></i> Add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single offer box slider -->
+                  <div class="swiper-slide swiper-slider-single-box">
+                    <div class="single-offer-slider">
+                      <div class="product-img-wrapper">
+                        <img
+                          src="images/special-offer-slider/finlay-gold-tea-free-glass-400-gm.webp"
+                          alt="product-img"
+                        />
+                      </div>
+                      <!-- product  -->
+                      <div class="product">
+                        <div class="product-wrwapper">
+                          <img
+                            src="images/special-offer-slider/finlay-gold-tea-free-glass-400-gm-product.webp"
+                            alt="img"
+                          />
+                          <div class="pr-name">Surf Excel Washing Powder</div>
+                          <p class="subTxt">1kg</p>
+                          <p class="price">৳ 15</p>
+                        </div>
+                        <button class="addToBagBtn">
+                          <i class="fa-solid fa-bolt-lightning"></i> Add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
 
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- jQuery CDN - Slim version -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -516,6 +642,17 @@
     ></script>
     <!-- main custom js -->
     <script src="js/main.js"></script>
+    <script>
+      var swiper = new Swiper(".specialOfferSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <!-- <script>
       $(document).ready(function () {
         $("#sidebarCollapse").on("click", function () {

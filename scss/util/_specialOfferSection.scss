@@ -1,0 +1,96 @@
+.special-offer {
+  width: 100%;
+  margin-bottom: 40px;
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    .specialOfferSwiper {
+      .swiper-wrapper {
+        .swiper-slider-single-box {
+          //   width: 50%;
+          height: 330px;
+          border-radius: 5px;
+          border: 1px solid #000;
+          display: flex;
+          align-items: center;
+          .single-offer-slider {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 15px 0px 15px 15px;
+            .product-img-wrapper {
+              margin-right: 10px;
+              img {
+                height: 225px;
+                object-fit: cover;
+              }
+            }
+            // product card
+            .product {
+              width: 150px;
+              margin: 0px 5px;
+              text-align: center;
+              .product-wrwapper {
+                border: 1px solid red;
+                margin-bottom: 6px;
+                border-radius: 3px;
+                img {
+                  max-width: 145px;
+                  max-height: 145px;
+                  object-fit: cover;
+                }
+                .pr-name {
+                  height: 60px;
+                  color: #1a1a1a;
+                  padding-top: 5px;
+                  font-size: 14px;
+                  text-overflow: ellipsis;
+                  white-space: normal;
+                  overflow: hidden;
+                }
+                .subTxt {
+                  color: #333;
+                  font-size: 12px;
+                  font-weight: 400;
+                  margin-top: 1px;
+                }
+                .price {
+                  font-weight: 700;
+                  text-align: center;
+                  padding-top: 5px;
+                  font-size: 18px;
+                  margin-bottom: 6px;
+                }
+              }
+              .addToBagBtn {
+                @include reset-btn;
+                transition: all ease-in-out 0.15s;
+                color: #fe8280;
+                font-weight: 700;
+                font-size: 14px;
+                cursor: pointer;
+                background-color: #fff;
+                border: 1px solid #ebebeb;
+                width: 100%;
+                padding: 6px 0px;
+                @include transition-100;
+                border-radius: 3px;
+
+                &:hover {
+                  transform: translateY(-1px);
+                  box-shadow: 0 1px 1px #c3c1c199;
+                  border-color: #d0cfcf;
+                }
+                i {
+                  margin-right: 5px;
+                  transform: rotate(30deg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
