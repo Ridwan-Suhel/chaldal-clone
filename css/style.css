@@ -387,13 +387,6 @@
   padding-right: 50px;
 }
 
-.product-category .custom-container h3 {
-  text-align: center;
-  color: rgba(0, 0, 0, 0.95);
-  font-weight: 300;
-  margin-bottom: 40px;
-}
-
 .product-category .custom-container .row-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,9 +432,42 @@
   width: 24px;
 }
 
+.howTo-order .section-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.howTo-order .section-wrapper .slider-wrapper .carousel-indicators {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+
+.howTo-order .section-wrapper .slider-wrapper .carousel-indicators .carousel-btn-wrapper {
+  margin-left: 50%;
+}
+
+.howTo-order .section-wrapper .slider-wrapper .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 100%;
+  opacity: 1;
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+}
+
+.howTo-order .section-wrapper .slider-wrapper .carousel-indicators button.active {
+  background-color: #ee4054;
+}
+
+.howTo-order .section-wrapper .slider-wrapper .slider-next-prev-btn-wrapper {
+  display: none;
+}
+
 .hero-area {
   background-image: url("../../images/homepage/landingBannerTop.jpg");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 325px;
@@ -560,5 +586,13 @@ li {
 .custom-container {
   max-width: 1180px;
   margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.95);
+  font-weight: 300;
+  margin-bottom: 40px;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */
