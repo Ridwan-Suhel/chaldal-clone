@@ -3,6 +3,13 @@
   height: 55px;
   background-color: #fdd670;
   border-bottom: 1px solid #dfb547;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 5;
   .nav-wrapper {
     width: 100%;
   }
